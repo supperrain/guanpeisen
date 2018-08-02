@@ -73,10 +73,20 @@ hr{
     justify-content:space-between;
     align-items:center;
 }
+.no7{
+    margin-top: 20px;
+    width:530px;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content:flex-end;
+    align-items:center;
+}
 .flex{
     display: flex;
     flex-flow: row nowrap;
     align-items:center;
+    margin-right: 70px;
 }
 .no5{
     margin-top: 20px;
