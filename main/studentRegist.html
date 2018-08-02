@@ -39,6 +39,16 @@
             justify-content:flex-start;
             align-items:center;
         }
+        .line{
+            width:530px;
+            height:1px;
+        }
+        hr{
+            border: 0px;
+            background-color: rgb(169, 217, 242);
+            height:1px;
+            margin: 0px;
+        }
         .no1{
             margin-top: 10px;
         }
@@ -47,10 +57,7 @@
             width:530px;
         }
         .input1{
-            border-color:rgb(169, 217, 242);
-            border-left-width: 0px;
-            border-right-width: 0px;
-            border-top-width: 0px;
+            border: 0px;
             background-color:transparent;
             height:30px;
             width: 100%;
@@ -58,6 +65,21 @@
         .no3{
             margin-top: 20px;
             width:530px;
+        }
+        .input2{
+            border: 0px;
+            background-color:transparent;
+            height:30px;
+            width: 80%;
+        }
+        .no4{
+            margin-top: 20px;
+            width:530px;
+
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content:space-between;
+            align-items:center;
         }
     </style>
     <title>学生注册页面</title>
@@ -67,8 +89,11 @@
         <div class="block">
             <div class="no1"><img src="../页面设计/元素/首页/logo.png" alt="logo" width="40px" height="40px"></div>
             <div class="no2"><input type="text" class="input1" placeholder="请输入手机号"/></div>
+            <div class="line"><hr/></div>
             <div class="no3"><input type="text" class="input1" placeholder="请输入密码"/></div>
-            <div class="no3"><input type="text" class="input1" placeholder="请输入验证码"/></div>
+            <div class="line"><hr/></div>
+            <div class="no4"><input type="text" class="input2" placeholder="请输入验证码"/>发送短信验证码</div>
+            <div class="line"><hr/></div>
             <div class="no5"></div>
             <div class="no6"></div>
             <div class="no7"></div>
