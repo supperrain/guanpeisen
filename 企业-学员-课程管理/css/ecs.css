@@ -243,3 +243,63 @@ button{
     justify-content:center;
     align-items:center;
 }
+
+/**********************************/
+#little-search{
+    width:900px;
+    margin-bottom: 20px;
+
+    display: flex;
+    flex-flow:column nowrap;
+    justify-content:flex-start;
+    align-items:flex-end;
+}
+#little-search-input{
+    width: 100px;
+
+    text-align: right;
+    color: white;
+    
+    border-radius: 10px;
+    border: none;
+    background-color: gray;
+}
+#little-search-input::-webkit-input-placeholder{
+    color:white;
+}
+
+#semester{
+    width:880px;
+    height:20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content:space-between;
+    align-items:center;
+}
+#siline{
+    width:900px;
+    height:1px;
+}
+#siline-hr{
+    width:100%;
+    height:100%;
+
+    background-color: #bfbfbf;
+}
+#infomation{
+    width:800px;
+}
+.align-center{
+    text-align: center;
+    height:30px;
+}
+table{
+    border-collapse: collapse;
+}
+.forborder{
+    height:30px;
+    border-bottom:1px solid #bfbfbf;
+}
