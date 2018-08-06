@@ -227,3 +227,65 @@ hr{
 .textalighcenter{
     text-align: center;
 }
+.flexrowalign{
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content:flex-start;
+    align-items:center;
+}
+/**********个人管理页面**********/
+#info{
+    width:800px;
+    height: 200px;
+
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content:center;
+    align-items:center;
+}
+#info-img{
+    width:101px;
+    height:101px;
+    border-radius: 50.5px;
+    background-color: #00A0E9;
+}
+#info-img-img{
+    border-radius: 50px;
+    overflow: hidden;
+}
+#info-message{
+    margin-left: 20px;
+    height:100px;
+}
+#middle-line{
+    width:800px;
+    height: 1px;
+}
+#middle-line-hr{
+    background-color: #bfbfbf;
+    height:1px;
+}
+#message{
+    width:800px;
+    height: 200px;
+
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content:center;
+    align-items:center;
+}
+#receive-resume,#receive-message{
+    width:100px;
+    height: 100px;
+
+    display: flex;
+    flex-flow:column nowrap;
+    justify-content:space-around;
+    align-items:center;
+}
+#check-details{
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content:center;
+    align-items:center;
+}

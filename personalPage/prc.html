@@ -11,41 +11,7 @@
     <script src="../lib/jquery-3.3.1.js"></script>
 </head>
 <body>
-    <div id="app">
-        <div id="top">
-            <div id="top-left">
-                <div id="top-left-img">
-                    <img src="../页面设计/元素/首页/logo.png" width="50px" height="50px" alt="logo">
-                </div>
-                <div id='top-left-word'>
-                    <div id="chinese"><font size="5"><b>管&nbsp;培&nbsp;森</b></font></div>
-                    <div id="line"><hr id="top-left-hr"/></div>
-                    <div id="english"><b>GUANPEISEN</b></div>
-                </div>
-            </div>
-            <div id="top-middle">
-                <div id="enterprise">
-                    <div id="top-middle-top"><b><router-link to="/enterprise"><font size="5" id="font1" class="fontcolorlight">个人管理</font></router-link></b></div>
-                    <div id="top-middle-bottom"><hr class="top-middle-hr" id="top-middle-hr1"></div>
-                </div>
-                <div id="courses">
-                    <div id="top-middle-top"><b><router-link to="/courses"><font size="5" id="font2" class="fontcolordark">简历管理</font></router-link></b></div>
-                    <div id="top-middle-bottom"><hr class="top-middle-hr" id="top-middle-hr2"></div>
-                </div>
-                <div id="students">
-                    <div id="top-middle-top"><b><router-link to="/students"><font size="5" id="font3" class="fontcolordark">班级管理</font></router-link></b></div>
-                    <div id="top-middle-bottom"><hr class="top-middle-hr" id="top-middle-hr3"></div>
-                </div>
-            </div>
-            <div id="top-right">
-                <div id="top-right-input">
-                    <input type="text" placeholder="  请输入您要查找的内容" id="top-right-find">
-                </div>
-                <div id="top-right-img">
-                    <img src="../页面设计/元素/首页/搜索 (1).png" width="30px" height="30px" alt="find">
-                </div>
-            </div>
-        </div>
+    <template id="classControl">
         <div id="formiddle">
             <div class="outline">
                 <div class="outleftline"><hr class="outlinehr"></div>
@@ -130,6 +96,83 @@
                             <td></td>
                         </tr>
                     </table>
+                </div>
+            </div>
+        </div>
+    </template>
+    <template class="personalControl">
+        <div id="formiddle">
+            <div class="main">
+                <div id="info">
+                    <div id="info-img">
+                        <img src="../页面设计/元素/头像/beauty.jpg" width="100px" height="100px" alt="beauty" id="info-img-img">
+                    </div>
+                    <div id="info-message">
+                        <div style="height:33.3px"><font><b>曾小黎</b></font></div>
+                        <div style="height:33.3px"><font><b>杭州阿里巴巴集团</b></font></div>
+                        <div style="height:33.3px" class="flexrowalign"><img src="../页面设计/元素/个人中心/资料.png" height="25px">&nbsp;&nbsp;&nbsp;<font color="#00A0E9" size="2"><b>完善资料</b></font></div>
+                    </div>
+                </div>
+                <div id="middle-line"><hr id="middle-line-hr"/></div>
+                <div id="message">
+                    <div id="receive-resume">
+                        <div><font color="#00A0E9" size="6">12</font></div>
+                        <div><b>收到的邀请</b></div>
+                        <div id="check-details"><font color="#00A0E9" size="1">查看详情</font><img src="../页面设计/元素/个人中心/查看1.png" height="16px" alt=""></div>
+                    </div>
+                    <div style="width:100px;"></div>
+                    <div id="receive-message">
+                        <div id="receive-resume">
+                            <div><font color="#00A0E9" size="6">24</font></div>
+                            <div><b>收到的消息</b></div>
+                            <div id="check-details"><font color="#00A0E9" size="1">查看详情</font><img src="../页面设计/元素/个人中心/查看1.png" height="16px" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+    <div id="app">
+        <div id="top">
+            <div id="top-left">
+                <div id="top-left-img">
+                    <img src="../页面设计/元素/首页/logo.png" width="50px" height="50px" alt="logo">
+                </div>
+                <div id='top-left-word'>
+                    <div id="chinese"><font size="5"><b>管&nbsp;培&nbsp;森</b></font></div>
+                    <div id="line"><hr id="top-left-hr"/></div>
+                    <div id="english"><b>GUANPEISEN</b></div>
+                </div>
+            </div>
+            <div id="top-middle">
+                <div id="enterprise">
+                    <div id="top-middle-top"><b><router-link to="/enterprise"><font size="5" id="font1" class="fontcolorlight">个人管理</font></router-link></b></div>
+                    <div id="top-middle-bottom"><hr class="top-middle-hr" id="top-middle-hr1"></div>
+                </div>
+                <div id="courses">
+                    <div id="top-middle-top"><b><router-link to="/courses"><font size="5" id="font2" class="fontcolordark">简历管理</font></router-link></b></div>
+                    <div id="top-middle-bottom"><hr class="top-middle-hr" id="top-middle-hr2"></div>
+                </div>
+                <div id="students">
+                    <div id="top-middle-top"><b><router-link to="/students"><font size="5" id="font3" class="fontcolordark">班级管理</font></router-link></b></div>
+                    <div id="top-middle-bottom"><hr class="top-middle-hr" id="top-middle-hr3"></div>
+                </div>
+            </div>
+            <div id="top-right">
+                <div id="top-right-input">
+                    <input type="text" placeholder="  请输入您要查找的内容" id="top-right-find">
+                </div>
+                <div id="top-right-img">
+                    <img src="../页面设计/元素/首页/搜索 (1).png" width="30px" height="30px" alt="find">
+                </div>
+            </div>
+        </div>
+        <div id="formiddle">
+            <div class="main">
+                <div class="outline">
+                    <div class="outleftline"><hr class="outlinehr"></div>
+                    <div class="outlinemiddle outline-word"><b>个人信息</b></div>
+                    <div class="outrightline"><hr class="outlinehr"></div>
                 </div>
             </div>
         </div>
